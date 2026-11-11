@@ -1,0 +1,7 @@
+packages:
+  - api
+  - web
+
+# pnpm 12 blocks install scripts by default; bcrypt compiles its native binding.
+allowBuilds:
+  bcrypt: true

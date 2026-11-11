@@ -1,0 +1,14 @@
+{
+  "name": "it-ticket-admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:api": "pnpm --filter api start:dev",
+    "dev:web": "pnpm --filter web dev",
+    "build": "pnpm --filter api build && pnpm --filter web build",
+    "lint": "pnpm --filter api lint && pnpm --filter web lint",
+    "test": "pnpm --filter api test && pnpm --filter web test",
+    "test:api:e2e": "pnpm --filter api test:e2e",
+    "seed": "pnpm --filter api seed"
+  }
+}
